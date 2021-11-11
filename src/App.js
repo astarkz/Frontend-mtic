@@ -23,7 +23,7 @@ function App() {
     domain='misiontic-figurascoleccion.us.auth0.com'
     clientId='noLL4IfQRNCli25Pu9jsdzSDvZDfVXD7'
     //noLL4IfQRNCli25Pu9jsdzSDvZDfVXD7
-    redirectUri='http://localhost:3000/admin/inicio'
+    redirectUri='https://aqueous-chamber-04819.herokuapp.com/admin/inicio'
     audience='api-autenticacion-figuras-mintic'
     
     >

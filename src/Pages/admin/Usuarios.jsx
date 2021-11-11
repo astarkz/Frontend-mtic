@@ -155,7 +155,7 @@ const FilaUsuario = ({ usuario, setEjecutarConsulta }) => {
         //enviar la info al backend
         const options = {
             method: 'PATCH',
-            url: 'http://localhost:5000/usuarios/editar',
+            url: 'https://mighty-mountain-14689.herokuapp.com/usuarios/editar',
             headers: { 'Content-Type': 'application/json',Authorization: getToken(), },
             data: { ...infoNuevoUsuario, id: usuario._id },
         };
@@ -177,7 +177,7 @@ const FilaUsuario = ({ usuario, setEjecutarConsulta }) => {
     const eliminarUsuario = async () => {
         const options = {
             method: 'DELETE',
-            url: 'http://localhost:5000/usuarios/eliminar',
+            url: 'https://mighty-mountain-14689.herokuapp.com/usuarios/eliminar',
             headers: { 'Content-Type': 'application/json',Authorization: getToken(), },
             data: { id: usuario._id },
         };
@@ -291,7 +291,7 @@ const FormularioCreacionUsuarios = ({ setMostrarTabla, listaUsuarios, setUsuario
 
         const options = {
             method: 'POST',
-            url: 'http://localhost:5000/usuarios/nuevo',
+            url: 'https://mighty-mountain-14689.herokuapp.com/usuarios/nuevo',
             headers: { 'Content-Type': 'application/json',Authorization: getToken() },
             data: {
                 name: nuevoUsuario.name, password: nuevoUsuario.password, rol: nuevoUsuario.rol

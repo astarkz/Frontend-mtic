@@ -1,12 +1,13 @@
 import axios from "axios";
 
+const baseURL='https://mighty-mountain-14689.herokuapp.com'
 //metodo para tomar el token del localStorage
 const getToken = () => {
   return `Bearer ${localStorage.getItem("token")}`;
 };
 
 export const obtenerUsuarios = async (setUsuarios, setEjecutarConsulta) => {
-  const options = { method: "GET", url: "http://localhost:5000/usuarios",
+  const options = { method: "GET", url: `${baseURL}/usuarios`,
 //se añade este headers en todos los metodos(GET,POST,PATCH Y DELETE) 
 //Nota: los get estan en Utils.api
 //el resto de metodos estan en cada pagina, ejemplo : Usuarios, ventas, vendedores
@@ -29,7 +30,7 @@ export const obtenerUsuarios = async (setUsuarios, setEjecutarConsulta) => {
 // PASO 3. ENVIAR EL TOKEN A AUTH0 (SERVER.JS)
 export const obtenerDatosUsuarios = async (setUsuarios, setEjecutarConsulta) => {
   const options = {
-    method: "GET", url: "http://localhost:5000/usuarios/self", //ruta dummy
+    method: "GET", url: `${baseURL}/usuarios/self`, //ruta dummy
     headers: {
       //authorization continene el token con toda la info del user
       Authorization: getToken(),
@@ -47,7 +48,7 @@ export const obtenerDatosUsuarios = async (setUsuarios, setEjecutarConsulta) => 
 };
 
 export const obtenerVendedores = async (setVendedores, setEjecutarConsulta) => {
-  const options = { method: "GET", url: "http://localhost:5000/Vendedores",
+  const options = { method: "GET", url: `${baseURL}/Vendedores`,
   headers:{
     Authorization: getToken(),
 },};
@@ -63,7 +64,7 @@ export const obtenerVendedores = async (setVendedores, setEjecutarConsulta) => {
 };
 
 export const obtenerVentas = async (setVentas, setEjecutarConsulta) => {
-  const options = { method: "GET", url: "http://localhost:5000/Ventas",
+  const options = { method: "GET", url: `${baseURL}/Ventas`,
   headers:{
     Authorization: getToken(),
 }, };

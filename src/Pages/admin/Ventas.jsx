@@ -131,7 +131,7 @@ const FilaVenta = ({ Venta, setEjecutarConsulta }) => {
         //enviar la info al backend
         const options = {
             method: 'PATCH',
-            url: 'http://localhost:5000/Ventas/editar',
+            url: 'https://mighty-mountain-14689.herokuapp.com/Ventas/editar',
             headers: { 'Content-Type': 'application/json' ,Authorization: getToken(),},
             data: { ...infoNuevaVenta, id: Venta._id },
         };
@@ -152,7 +152,7 @@ const FilaVenta = ({ Venta, setEjecutarConsulta }) => {
     const eliminarVenta = async () => {
         const options = {
             method: 'DELETE',
-            url: 'http://localhost:5000/Ventas/eliminar',
+            url: 'https://mighty-mountain-14689.herokuapp.com/Ventas/eliminar',
             headers: { 'Content-Type': 'application/json',Authorization: getToken(), },
             data: { id: Venta._id },
         };
@@ -267,7 +267,7 @@ const FormularioCreacionVentas = ({ setMostrarTabla, listaVentas, setVentas }) =
 
         const options = {
             method: 'POST',
-            url: 'http://localhost:5000/Ventas/nueva',
+            url: 'https://mighty-mountain-14689.herokuapp.com/Ventas/nueva',
             headers: { 'Content-Type': 'application/json',Authorization: getToken(), },
             data: {
                 descripcion: nuevaVenta.descripcion, valor_total_venta: nuevaVenta.valor_total_venta, fecha_inicial: nuevaVenta.fecha_inicial

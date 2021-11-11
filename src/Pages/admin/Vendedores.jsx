@@ -130,7 +130,7 @@ const FilaVendedor = ({ Vendedor, setEjecutarConsulta }) => {
         //enviar la info al backend
         const options = {
             method: 'PATCH',
-            url: 'http://localhost:5000/Vendedores/editar',
+            url: 'https://mighty-mountain-14689.herokuapp.com/Vendedores/editar',
             headers: { 'Content-Type': 'application/json',Authorization: getToken(), },
             data: { ...infoNuevoVendedor, id: Vendedor._id },
         };
@@ -151,7 +151,7 @@ const FilaVendedor = ({ Vendedor, setEjecutarConsulta }) => {
     const eliminarVendedor = async () => {
         const options = {
             method: 'DELETE',
-            url: 'http://localhost:5000/Vendedores/eliminar',
+            url: 'https://mighty-mountain-14689.herokuapp.com/Vendedores/eliminar',
             headers: { 'Content-Type': 'application/json' ,Authorization: getToken(),},
             data: { id: Vendedor._id },
         };
@@ -266,7 +266,7 @@ const FormularioCreacionVendedores = ({ setMostrarTabla, listaVendedores, setVen
 
         const options = {
             method: 'POST',
-            url: 'http://localhost:5000/Vendedores/nuevo',
+            url: 'https://mighty-mountain-14689.herokuapp.com/Vendedores/nuevo',
             headers: { 'Content-Type': 'application/json',Authorization: getToken(), },
             data: {
                 name: nuevoVendedor.name, especialidad: nuevoVendedor.especialidad, celular: nuevoVendedor.celular

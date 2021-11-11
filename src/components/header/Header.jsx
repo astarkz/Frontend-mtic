@@ -12,7 +12,7 @@ const Header = () => {
     const { logout } = useAuth0();
     const cerrarSesion=()=>{
 
-      logout({ returnTo: window.location.origin });
+      logout({ returnTo: 'https://aqueous-chamber-04819.herokuapp.com' });
       localStorage.setItem('token',null);
     }
   return (
