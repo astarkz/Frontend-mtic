@@ -17,10 +17,10 @@ const Index = () => {
             <MiCard titulo="Iron Man" descripcion="Hero Collector Colección Marvel Pesos Pesados | Figura de Metal Pesado Iron Man" imagen={ironMan} textoBtn="Añadir al carrito" />
             <MiCard titulo="SpiderMan" descripcion="Marvel Movie Collection | Figura de Metal Pesado Spider Man (Avengers: Endgame)" imagen={spiderMan} textoBtn="Añadir al carrito" />
             <MiCard titulo="Hulk" descripcion="Marvel Movie Collection Other Estatua Hulk, Multicolor (EAMOMMFRWS006)" imagen={hulk} textoBtn="Añadir al carrito" />
-            <MiCard titulo="Groot" descripcion="Hero Collector Marvel Heavyweight Collection | Capitán América (Avengers: Endgame)" imagen={groot} textoBtn="Añadir al carrito" />
-            <MiCard titulo="Capitana Marvel" descripcion="Hero Collector Colección Marvel Pesos Pesados | Figura de Metal Pesado Iron Man" imagen={capitana} textoBtn="Añadir al carrito" />
-            <MiCard titulo="Halcon" descripcion="Marvel Movie Collection | Figura de Metal Pesado Spider Man (Avengers: Endgame)" imagen={halcon} textoBtn="Añadir al carrito" />
-            <MiCard titulo="Ant-man" descripcion="Marvel Movie Collection Other Estatua Hulk, Multicolor (EAMOMMFRWS006)" imagen={antman} textoBtn="Añadir al carrito" />
+            <MiCard titulo="Groot" descripcion="Hero Collector Marvel Heavyweight Collection | Groot (Avengers: Endgame)" imagen={groot} textoBtn="Añadir al carrito" />
+            <MiCard titulo="Capitana Marvel" descripcion="Hero Collector Colección Marvel Pesos Pesados | Figura de Metal Pesado Capitana Marvel" imagen={capitana} textoBtn="Añadir al carrito" />
+            <MiCard titulo="Halcon" descripcion="Marvel Movie Collection | Figura de Metal Pesado Halcon (Avengers: Endgame)" imagen={halcon} textoBtn="Añadir al carrito" />
+            <MiCard titulo="Ant-man" descripcion="Marvel Movie Collection Other Estatua Ant-man, Multicolor (EAMOMMFRWS006)" imagen={antman} textoBtn="Añadir al carrito" />
         </div>
     )
 }
