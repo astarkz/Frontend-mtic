@@ -19,7 +19,7 @@ const Header = () => {
     <section className="o-main-container">
       <section className="o-up-navbar">
         <section>
-          <h3>X-force team</h3>
+          <h3 className='m-0'>X-force team</h3>
         </section>
 
         <section>
@@ -38,7 +38,7 @@ const Header = () => {
         <section className="o-user-bar">
           <img className="o-img" src={notifications} alt="Notifications" />
           <img className="o-img" src={user} alt="Foto del usuario" />
-          <h4>Administrador</h4>
+          <h4 className='m-3'>Administrador</h4>
           <button
             className=""
             onClick={() => cerrarSesion() }
